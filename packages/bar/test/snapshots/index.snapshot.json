@@ -1,0 +1,1 @@
+{"bar test":{"skip":false,"todo":false,"run":false,"isPending":false,"isRejected":false,"isFulfilled":true,"id":1,"str":"(t) => {\n  t.ok(bar());\n  _612‍.g.console.log('barrr');\n}","title":"bar test"}}

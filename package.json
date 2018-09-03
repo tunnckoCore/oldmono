@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo",
+  "scripts": {
+    "cov": "pnpm recursive run cov",
+    "test": "pnpm recursive run test",
+    "eslint": "echo 'naaaah'",
+    "build": "pnpm recursive run build"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/olstenlarck/monorepo",
+  "renovate": {
+    "extends": "tunnckocore"
+  },
+  "eslintConfig": {
+    "extends": "esmc"
+  },
+  "devDependencies": {
+    "asia": "^0.19.7",
+    "eslint": "^5.5.0",
+    "eslint-config-esmc": "^1.0.6",
+    "nyc": "^13.0.1"
+  },
+  "dependencies": {
+    "esm": "^3.0.81"
+  }
+}

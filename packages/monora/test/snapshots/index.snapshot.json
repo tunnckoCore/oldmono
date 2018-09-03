@@ -1,0 +1,1 @@
+{"monora":{"skip":false,"todo":false,"run":false,"isPending":false,"isRejected":false,"isFulfilled":true,"id":1,"str":"async (t) => {\n  t.ok(typeof foo === 'function');\n  _69d‍.g.console.log('monora yxeah');\n\n  // await foo();\n  // t.ok(true, 'should not error');\n}","title":"monora"}}

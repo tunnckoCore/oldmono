@@ -1,0 +1,52 @@
+{
+  "name": "@tunnckocore/monora",
+  "description": "Universal and minimalist scripts & tasks runner. Built for npm, Yarn and PNPM",
+  "scripts": {
+    "cov": "nyc --require esm asia",
+    "test": "asia --require esm",
+    "lint": "eslint src test index.js cli.js --fix --format codeframe",
+    "build": "echo todo"
+  },
+  "monora": {
+    "presets": "monora-config-esmc",
+    "foobie": "echo foobie"
+  },
+  "dependencies": {
+    "esm": "^3.0.81",
+    "execa-pro": "^1.0.8"
+  },
+  "bin": {
+    "monora": "cli.js"
+  },
+  "main": "index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "typings": "src/index.d.ts",
+  "version": "0.3.1",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/olstenlarck/monorepo/tree/master/packages/monora",
+  "repository": "https://github.com/olstenlarck/monorepo/tree/master/packages/monora",
+  "files": [
+    "src",
+    "index.js",
+    "cli.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "nyc": {
+    "statements": 0,
+    "functions": 0,
+    "branches": 0,
+    "lines": 0,
+    "cache": true,
+    "check-coverage": true,
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "exclude": [
+      "test"
+    ]
+  }
+}

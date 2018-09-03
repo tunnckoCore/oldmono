@@ -1,0 +1,45 @@
+{
+  "name": "@tunnckocore/foo",
+  "description": "the foo package",
+  "scripts": {
+    "cov": "nyc --require esm asia",
+    "test": "asia --require esm",
+    "lint": "eslint src test --fix --format codeframe --quiet",
+    "build": "echo todo"
+  },
+  "dependencies": {
+    "esm": "^3.0.81"
+  },
+  "devDependencies": {
+  },
+  "main": "index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "typings": "src/index.d.ts",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/olstenlarck/monorepo/tree/master/packages/foo",
+  "repository": "https://github.com/olstenlarck/monorepo/tree/master/packages/foo",
+  "files": [
+    "src",
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "nyc": {
+    "statements": 10,
+    "functions": 10,
+    "branches": 10,
+    "lines": 10,
+    "cache": true,
+    "check-coverage": true,
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "exclude": [
+      "test"
+    ]
+  }
+}

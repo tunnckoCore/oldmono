@@ -1,0 +1,7 @@
+# Ignore NPM package folders
+node_modules
+
+dist
+
+# Ignore Rush temporary files
+/common/temp/**
