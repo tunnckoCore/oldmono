@@ -1,6 +1,8 @@
 # Ignore NPM package folders
 node_modules
 
+coverage
+.nyc_output
 dist
 
 # Ignore Rush temporary files
